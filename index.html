@@ -21,24 +21,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Sobre Mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfólio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resume">Currículo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contactos</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="#home">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Currículo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
                 </ul>
             </div>
         </div>
@@ -46,95 +34,124 @@
 
     <!-- Home Section -->
     <section id="home" class="home-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h1>Ricardo Rocha</h1>
-                    <p class="lead">Desenvolvimento Web</p>
-                    <p class="lead">Inovação, Eficiência, Transparência e Profissionalismo</p>
-                    <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
-                </div>
-            </div>
+        <div class="container text-center">
+            <h1>Ricardo Rocha</h1>
+            <p class="lead">Desenvolvimento Web & Computação Distribuída</p>
+            <p class="lead">Inovação, Eficiência, Transparência e Profissionalismo</p>
+            <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
         <div class="container">
-            <h2>Sobre Mim</h2>
-            <p>
-                A minha missão enquanto profissional é criar soluções digitais eficientes e inovadoras, destacando-me no desenvolvimento web e na computação distribuída. O meu portfólio é a minha montra digital, onde partilho conhecimentos, projetos e experiências.
-            </p>
-            <h3>Valores</h3>
-            <ul>
-                <li><strong>Inovação</strong>: Uso de tecnologia moderna para criar soluções impactantes.</li>
-                <li><strong>Eficiência</strong>: Organização e performance otimizada em cada projeto.</li>
-                <li><strong>Transparência</strong>: Comunicação clara e acessível.</li>
-                <li><strong>Profissionalismo</strong>: Apresentação cuidada, atenção aos detalhes e compromisso com a qualidade.</li>
-            </ul>
+            <h2 class="text-center">Sobre Mim</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-left">
+                    <p>
+                        Crio soluções digitais inovadoras, com foco no desenvolvimento web e computação distribuída. A minha missão é entregar projetos eficientes, modernos e alinhados com as necessidades dos clientes.
+                    </p>
+                    <h3 class="mt-4">Valores</h3>
+                    <ul class="list-unstyled">
+                        <li><strong>Inovação</strong>: Uso de tecnologia moderna para criar soluções impactantes.</li>
+                        <li><strong>Eficiência</strong>: Organização e performance otimizada em cada projeto.</li>
+                        <li><strong>Transparência</strong>: Comunicação clara e acessível.</li>
+                        <li><strong>Profissionalismo</strong>: Compromisso com qualidade e atenção aos detalhes.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
         <div class="container">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <i class="fas fa-code skill-icon"></i>
+            <h2 class="text-center">Skills</h2>
+            <div class="row justify-content-center">
+                <!-- Card 1: Desenvolvimento Web -->
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-left p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-code fa-3x"></i>
+                        </div>
                         <h3>Desenvolvimento Web</h3>
-                        <p>HTML, CSS, JavaScript, Angular, Node.js, Docker.</p>
+                        <ul class="list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Node.js</li>
+                            <li>Docker</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <i class="fas fa-network-wired skill-icon"></i>
+
+                <!-- Card 2: Computação Distribuída -->
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-left p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-network-wired fa-3x"></i>
+                        </div>
                         <h3>Computação Distribuída</h3>
-                        <p>Arquiteturas distribuídas, Cloud Computing, Docker</p>
+                        <ul class="list-unstyled">
+                            <li>Arquiteturas Distribuídas</li>
+                            <li>Cloud Computing</li>
+                            <li>Docker</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="skill-card">
-                        <i class="fas fa-tools skill-icon"></i>
+
+                <!-- Card 3: Ferramentas -->
+                <div class="col-md-4 mb-4">
+                    <div class="skill-card text-left p-4">
+                        <div class="skill-icon mb-3">
+                            <i class="fas fa-tools fa-3x"></i>
+                        </div>
                         <h3>Ferramentas</h3>
-                        <p>Git, Bootstrap, Canva, Visual Studio Code, Docker</p>
+                        <ul class="list-unstyled">
+                            <li>Git</li>
+                            <li>Bootstrap</li>
+                            <li>Canva</li>
+                            <li>VS Code</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio-section">
-    <div class="container">
-        <h2>Portfólio</h2>
-        <div class="row">
-            <!-- Projeto 1 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Site de stand Carros</h5>
-                        <p class="card-text">Demonstração de como se criar um site de carros onde se consultar diversos carros clássicos </p>
-                        <a href="projetos/projeto1/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2 class="text-center">Portfólio</h2>
+            <div class="row justify-content-center">
+                <!-- Projeto 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">Site de Stand de Carros</h5>
+                            <p class="card-text">Site para consulta de carros clássicos.</p>
+                            <a href="projetos/projeto1/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Projeto 2 -->
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Hotel com gestão de reservas</h5>
-                        <p class="card-text">Página de hotel com gestão de reservas.</p>
-                        <a href="projetos/projeto2/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
-                    </div>
-                </div>
-            </div>
 
+                <!-- Projeto 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card">
+                        <div class="card-body text-left">
+                            <h5 class="card-title">Hotel com Gestão de Reservas</h5>
+                            <p class="card-text">Página de hotel com sistema de reservas.</p>
+                            <a href="projetos/projeto2/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Resume Section -->
     <section id="resume" class="resume-section">
-        <div class="container">
+        <div class="container text-center">
             <h2>Currículo</h2>
             <p>Faça o download do meu currículo em PDF:</p>
             <a href="curriculo.pdf" class="btn btn-primary" download>
@@ -144,43 +161,37 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2>Contactos</h2>
-        <form action="https://formspree.io/f/seu-endpoint-aqui" method="POST">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="name" name="name" required>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="text-center">Contactos</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="https://formspree.io/f/xbldygkk" method="POST" class="text-left">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
-    </div>
-</section>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer bg-dark text-white">
+    <footer class="footer bg-dark text-white text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>&copy; 2025 Ricardo Rocha. Todos os direitos reservados.</p>
-                </div>
-                <div class="col-md-6 text-end">
-                    <a href="https://www.linkedin.com/in/ricardo-rocha-180720a9/" class="text-white me-3">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://github.com/Cahves" class="text-white">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                </div>
-            </div>
+            <p>&copy; 2025 Ricardo Rocha. Todos os direitos reservados.</p>
+            <a href="https://www.linkedin.com/in/ricardo-rocha-180720a9/" class="text-white me-3"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Cahves" class="text-white"><i class="fab fa-github"></i> GitHub</a>
         </div>
     </footer>
 

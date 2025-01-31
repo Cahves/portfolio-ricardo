@@ -1,110 +1,134 @@
-    /* Global Styles */
-    body {
-        font-family: 'Orbitron', sans-serif;
-        color: #2D2F2D;
-        background-color: #f8f9fa;
-    }
+/* Global Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    color: #2D2F2D;
+    background-color: #f8f9fa;
+}
 
-    h1, h2, h3 {
-        font-weight: 700;
-        color: #8330D8;
-    }
+h1, h2, h3 {
+    font-weight: 700;
+    color: #8330D8;
+}
 
-    p {
-        font-weight: 400;
-    }
+p {
+    font-weight: 400;
+}
 
-    .btn-primary {
-        background-color: #8330D8;
-        border-color: #8330D8;
-    }
+.btn-primary {
+    background-color: #8330D8;
+    border-color: #8330D8;
+}
 
-    .btn-primary:hover {
-        background-color: #6a1d9f;
-        border-color: #6a1d9f;
-    }
+.btn-primary:hover {
+    background-color: #6a1d9f;
+    border-color: #6a1d9f;
+}
 
-    /* Navbar */
-    .navbar {
-        background-color: #2D2F2D !important;
-    }
+/* Navbar */
+.navbar {
+    background-color: #2D2F2D !important;
+}
 
-    .navbar-brand img {
-        height: 40px;
-    }
+.navbar-brand img {
+    height: 40px;
+}
 
-    /* Home Section */
-    .home-section {
-        background-color: #237692;
-        color: white;
-        padding: 100px 0;
-    }
+/* Seções */
+section {
+    padding: 80px 0;
+}
 
-    .home-section h1 {
-        color: white;
-    }
+/* Home Section */
+.home-section {
+    background-color: #237692;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-    /* About Section */
-    .about-section {
-        padding: 50px 0;
-    }
+/* About Section */
+.about-section {
+    background-color: white;
+}
 
-    /* Skills Section */
-    .skills-section {
-        padding: 50px 0;
-    }
+/* Skills Section */
+.skills-section {
+    background-color: #f8f9fa;
+}
 
-    .skill-card {
-        text-align: center;
-        padding: 20px;
-        border: 1px solid #3C5130;
-        border-radius: 10px;
+.skill-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    color: #8330D8;
+}
+
+.skill-card h3 {
+    color: #2D2F2D;
+    margin-bottom: 15px;
+}
+
+.skill-card ul li {
+    color: #237692;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    background-color: white;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Resume Section */
+.resume-section {
+    background-color: #f8f9fa;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: white;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FE2C31;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skill-card, .card {
         margin-bottom: 20px;
     }
-
-    .skill-icon {
-        font-size: 2rem;
-        color: #8330D8;
-        margin-bottom: 10px;
-    }
-
-    /* Portfolio Section */
-    .portfolio-section {
-        padding: 50px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .portfolio-section .row {
-        display: flex;
-        justify-content: center;
-        gap: 30px; /* Para adicionar um espaço entre as cartas */
-    }
-
-
-    /* Resume Section */
-    .resume-section {
-        padding: 50px 0;
-        text-align: center;
-    }
-
-    /* Contact Section */
-    .contact-section {
-        padding: 50px 0;
-    }
-
-    /* Footer */
-    .footer {
-        padding: 20px 0;
-    }
-
-    .footer a {
-        color: white;
-        text-decoration: none;
-    }
-
-    .footer a:hover {
-        color: #FE2C31;
-    }
+}
