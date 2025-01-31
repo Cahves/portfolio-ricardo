@@ -71,11 +71,18 @@ p {
 /* Portfolio Section */
 .portfolio-section {
     padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.card {
-    margin-bottom: 20px;
+.portfolio-section .row {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Para adicionar um espaço entre as cartas */
 }
+
 
 /* Resume Section */
 .resume-section {
