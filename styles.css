@@ -77,6 +77,12 @@ p {
     margin-bottom: 20px;
 }
 
+/* Resume Section */
+.resume-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
 /* Contact Section */
 .contact-section {
     padding: 50px 0;
@@ -85,4 +91,13 @@ p {
 /* Footer */
 .footer {
     padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FE2C31;
 }

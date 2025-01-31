@@ -14,7 +14,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo2.png" alt="Logo Ricardo Rocha" height="30">
+                <img src="Logo2.png" alt="Logo Ricardo Rocha" height="30">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -34,6 +34,9 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#resume">Currículo</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contactos</a>
                     </li>
                 </ul>
@@ -45,14 +48,11 @@
     <section id="home" class="home-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12 text-center">
                     <h1>Ricardo Rocha</h1>
-                    <p class="lead">Desenvolvimento Web & Computação Distribuída</p>
+                    <p class="lead">Desenvolvimento Web</p>
                     <p class="lead">Inovação, Eficiência, Transparência e Profissionalismo</p>
                     <a href="#portfolio" class="btn btn-primary">Ver Portfólio</a>
-                </div>
-                <div class="col-md-6 text-end">
-                    <img src="logo2.png" alt="Logo Ricardo Rocha" height="150">
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                     <div class="skill-card">
                         <i class="fas fa-code skill-icon"></i>
                         <h3>Desenvolvimento Web</h3>
-                        <p>HTML, CSS, JavaScript, React, Node.js</p>
+                        <p>HTML, CSS, JavaScript, Angular, Node.js, Docker.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -98,87 +98,87 @@
                     <div class="skill-card">
                         <i class="fas fa-tools skill-icon"></i>
                         <h3>Ferramentas</h3>
-                        <p>Git, Bootstrap, Figma, Visual Studio Code</p>
+                        <p>Git, Bootstrap, Canva, Visual Studio Code, Docker</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>Portfólio</h2>
-            <div class="row">
-                <!-- Projeto 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="project1.jpg" class="card-img-top" alt="Projeto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Trabalho Académico</h5>
-                            <p class="card-text">Desenvolvimento de uma aplicação web para gestão de projetos académicos.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projeto 2 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="project2.jpg" class="card-img-top" alt="Projeto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Trabalho em Grupo</h5>
-                            <p class="card-text">Sistema de computação distribuída para processamento de grandes volumes de dados.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Projeto 3 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="project3.jpg" class="card-img-top" alt="Projeto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Hobbies</h5>
-                            <p class="card-text">Desenvolvimento de jogos simples usando Python e Pygame.</p>
-                            <a href="#" class="btn btn-primary">Ver Detalhes</a>
-                        </div>
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container">
+        <h2>Portfólio</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Site de stand Carros</h5>
+                        <p class="card-text">Demonstração de como se criar um site de carros onde se consegue manipular </p>
+                        <a href="projetos/projeto1/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
                     </div>
                 </div>
             </div>
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto 2</h5>
+                        <p class="card-text">Descrição breve do projeto.</p>
+                        <a href="projetos/projeto2/index.html" class="btn btn-primary" target="_blank">Ver Projeto</a>
+                    </div>
+                </div>
+            </div>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2>Currículo</h2>
+            <p>Faça o download do meu currículo em PDF:</p>
+            <a href="curriculo.pdf" class="btn btn-primary" download>
+                <i class="fas fa-download"></i> Baixar Currículo
+            </a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <div class="container">
-            <h2>Contactos</h2>
-            <form>
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensagem</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Contactos</h2>
+        <form action="https://formspree.io/f/seu-endpoint-aqui" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</section>
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p>&copy; 2023 Ricardo Rocha. Todos os direitos reservados.</p>
+                    <p>&copy; 2025 Ricardo Rocha. Todos os direitos reservados.</p>
                 </div>
                 <div class="col-md-6 text-end">
-                    <a href="#" class="text-white me-3">LinkedIn</a>
-                    <a href="#" class="text-white">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ricardo-rocha-180720a9/" class="text-white me-3">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/Cahves" class="text-white">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
                 </div>
             </div>
         </div>

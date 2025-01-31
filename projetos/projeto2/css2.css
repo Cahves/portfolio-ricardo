@@ -1,0 +1,162 @@
+/* Estilos gerais */
+.clear-section {
+    clear: both;
+}
+
+/* Estilos para a seção 'Serviços Fantásticos' */
+.services-intro {
+    padding-top: 100px; /* Ajuste conforme necessário para o seu cabeçalho */
+    margin-top: 0; /* Remove margem superior se houver */
+}
+
+/* Estilos para o cabeçalho da seção */
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-heading h2 {
+    font-size: 2.5rem;
+    color: #555;
+}
+
+/* Utilize Flexbox para as colunas */
+.left-column, .right-column {
+    width: 50%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+
+.left-column img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right-column {
+    padding: 2rem;
+    background-color: #f7f7f7; /* Uma cor clara para melhor contraste e legibilidade */
+}
+
+.service-intro-text {
+    margin: 0 3rem; /* Usando 'rem' ao invés de 'cm' */
+    text-align: left;
+    color: #333; /* Garanta que o texto seja de uma cor visível contra o fundo */
+}
+
+/* Estilos para o botão 'Read More' */
+#read-more-btn {
+    background-color: #a67c52;
+    color: white;
+    padding:  auto;
+    display: block;
+    width: fit-content; /* Faz com que o botão se ajuste ao conteúdo */
+    margin: 20px auto; /* Centraliza o botão horizontalmente e adiciona espaço acima */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    text-decoration: none; /* Remove a sublinhado do texto do botão */
+}
+
+/* Responsividade */
+@media (max-width: 991px) {
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .service-intro-text {
+        margin: 1cm; /* Ajustado para dispositivos menores */
+    }
+}
+
+/* Transições suaves para o efeito cascata */
+.left-column img, .service-intro-text {
+    transition: transform 0.3s ease;
+}
+
+* Reset básico e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* A imagem de fundo ocupando toda a área disponível */
+.background-image {
+    background: url('img/bg-img/luxo.avif') no-repeat center center/cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização do botão 'Read More' */
+#readMore {
+    background-color: rgba(137, 196, 244, 0.5); /* Cor azul esverdeado claro com opacidade */
+
+    color: #333;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+/* Estilização da caixa de texto escondida */
+#aboutText {
+    background-color: rgba(244, 143, 177, 0.5); /* Cor coral suave com opacidade */
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10%; /* Ajuste conforme necessário para posicionar acima do botão */
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    z-index: 5;
+}
+
+/* Classe para tornar a caixa de texto visível e movê-la acima do botão */
+.text-visible {
+    transform: translate(-50%, -100%) scale(1) !important; /* Move para cima e torna visível */
+    opacity: 1 !important;
+    visibility: visible !important;
+
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    #readMore {
+        bottom: 15%;
+    }
+
+    /* Estilização da caixa de texto escondida */
+    #aboutText {
+    /* ... outras propriedades ... */
+    bottom: 50%; /* Posiciona inicialmente no centro verticalmente */
+    transform: translate(-50%, 0) scale(0); /* Inicia escondido com scale(0) */
+    /* ... outras propriedades ... */
+}}
+
+.contrast-p {
+    color: rgba(251, 255, 2, 0.989); /* Cor amarelo claro com alta opacidade */
+}
+.text-box .contrast-p {
+    color: #fff !important; /* Isto irá forçar a cor a branco, independentemente de outras regras */
+}
+
+.d-none {
+    display: none !important;
+}
+
+
